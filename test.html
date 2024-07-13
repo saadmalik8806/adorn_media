@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll Effect</title>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.content-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    margin-bottom: 50px;
+}
+
+.content-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Smooth Scroll</h1>
+    </header>
+    <main>
+        <section class="content-section" id="content-section">
+            <h2>Section 1</h2>
+            <p>Content for the first section.</p>
+        </section>
+        <section class="content-section" id="content-section">
+            <h2>Section 2</h2>
+            <p>Content for the second section.</p>
+        </section>
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+        <section class="content-section" id="content-section">
+            <h2>Section 3</h2>
+            <p>Content for the third section.</p>
+        </section>
+
+        
+
+        
+
+    </main>
+    <script>
+   document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('#content-section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+    </script>
+</body>
+</html>

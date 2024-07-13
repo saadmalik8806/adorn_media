@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adorn | Contact Us</title>
+    <link rel="stylesheet" href="css/contactus.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+      <!-- google fonts  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#">Our Services</a>
+                    <div class="dropdown-content">
+                        <!-- First Column -->
+                        <div class="dropdown-column">
+                            <div class="dropdown-section">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <div style="    text-align: left;">
+                                    <h4>Demand Generation</h4>
+                                    <p>Igniting Desire, Creating Demand</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                                <div style="    text-align: left;">
+                                    <h4>Lead Generation</h4>
+                                    <p>Fueling Growth, One Lead at a Time</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <div style="    text-align: left;">
+                                    <h4>Digital Marketing</h4>
+                                    <p>Precision Targeting, Amplified Results</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <i class="fa-solid fa-database"></i>
+                                <div style="    text-align: left;">
+                                    <h4>B2B Data Services</h4>
+                                    <p>Empowering Connections, Driving Success</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Second Column -->
+                        <div class="dropdown-column">
+                            <h4 class="column-title">Demand Generation Services</h4>
+                            <ul>
+                                <li><a href="#">Content Syndication</a></li>
+                                <li><a href="#">Programmatic Advertising</a></li>
+                                <!-- <li><a href="#">Event Marketing</a></li>
+                                <li><a href="#">Webinar Marketing</a></li>
+                                <li><a href="#">Market Research</a></li> -->
+                            </ul>
+                        </div>
+                        <!-- Third Column -->
+                        <div class="dropdown-column">
+                            <h4 class="column-title">Lead Generation Services</h4>
+                            <ul>
+                                <li><a href="#">MQL</a></li>
+                                <li><a href="#">SQL</a></li>
+                                <li><a href="#">BANT</a></li>
+                                <li><a href="#">AG</a></li>
+                            </ul>
+                        </div>
+                        <!-- Fourth Column -->
+                        <div class="dropdown-column">
+                            <h4 class="column-title">Digital Marketing</h4>
+                            <ul>
+                                <li><a href="#">Content Marketing</a></li>
+                                <li><a href="#">Search Engine Optimization (SEO)</a></li>
+                                <li><a href="#">Social Media Marketing</a></li>
+                                <li><a href="#">Pay-per-click (PPC) Advertising</a></li>
+                                <li><a href="#">Marketing Automation</a></li>
+                                <li><a href="#">View All <i class="fa-solid fa-arrow-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Newsletters</a></li>
+                <li><button>Get In Touch</button> <i class="fa-solid fa-arrow-right"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main data-aos="fade-up" data-aos-delay="400">
+        <div class="main-content">
+            <!-- Left Side Content -->
+            <div class="left-side">
+                <p>Contact Us</p>
+                <h1>Our team is ready to assist you!
+                   <span>Contact us for any inquiries</span></h1>
+                   <div class="firstpart">
+                    <h3>Interested in working with us?</h3>
+                    <p>Or have a general enquiry? Fill in the form today, and our team will be in touch shortly.</p>
+                   </div>
+                   <div class="second-part">
+                    <h3>Hate Forms?</h3>
+                    <p>If you’d prefer to email us directly, send a message to one of our regional offices:</p>
+                   </div>
+                   <div class="third-part">
+                    <p>United States - sales@adorn-media.com</p>
+                    <p>India - sales@adorn-media.com</p>
+                   </div> 
+                </div>
+            <!-- Right Side Content -->
+            <div class="right-side">
+                <div class="form-container">
+                    <form>
+                        <div class="form-group flex-container">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="phone" name="email" placeholder="Phone *" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address *" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Enter Company Name *</label>
+                            <input type="text" id="company" name="company" placeholder="Company Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="referral-source">How did you hear about us?</label>
+                            <select id="referral-source" name="referral-source" required>
+                                <option value="" disabled selected>Choose a reason</option>
+                                <option value="google">Google/Organic Search</option>
+                                <option value="social-media">Referral/Word of Mouth</option>
+                                <option value="friend">LinkedIn</option>
+                                <option value="advertisement">Instagram</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <p>By submitting this for I accept the <a href="#"> Privacy Policy</a> of this site.</p>
+                        </div>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- New Section -->
+    <section class="new-section" data-aos="fade-up" data-aos-delay="700">
+        <div class="container">
+            <div class="part">
+                <h2>United States</h2>
+                <div class="content">
+                   <p class="bottom-para"><b>Corporate Communications Center:</b> <br>
+                    2212 NW 91st Street Miami, Florida <br>
+                    33147 <br>
+                   
+                    
+                </p>
+                <p class="bottom-para"> +1(938) 204-0522</p>
+                <p class="bottom-para" style="color: #ffff00; font-weight: 600;">sales@adorn-media.com</p>
+                  
+                </div>
+                
+            </div>
+            <div class="part">
+                <h2>India</h2>
+                <div class="content">
+                    <p class="bottom-para"><b>Central Office:</b> <br>
+                        ADORN HOUSE, CHS Harmony, Ganga Dham, Pune , 411 037 <br>
+                       
+                        
+                    </p>
+                    <p class="bottom-para">
+                        +91 9272341234
+                    </p>
+                    <p class="bottom-para" style="color: #ffff00; font-weight: 600;">
+                        sales@adorn-media.com
+                    </p>
+                  
+                </div>
+               
+            </div>
+            <div class="part">
+                <div class="content">
+                    
+                    <p><b>Operations Excellence Center:</b></p>
+                    <p>LMS Finswell 910 ,Viman Nagar, Pune, Maharashtra 411014</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="large-card-section" data-aos="fade-up" data-aos-delay="600">
+        <div class="large-card">
+            <div class="large-card-content">
+                <h2 class="bottom-heading">Our Team Is Ready To Assist You <br> <div style="color: #fff;"> Contact Us</div> For Any Inquiries</h2>
+                <button class="cta-button" style="width: 28%;">Let's Chat</button>
+            </div>
+            <div class="large-card-image">
+                <img src="img/bottom image.webp" alt="Our Approach">
+            </div>
+        </div>
+    </section>
+
+
+    <footer data-aos="fade-up" data-aos-delay="600">
+        <div class="footer-content">
+            <div class="footer-section logo-section" style="min-width: 358px;">
+                <img src="img/logo.png" alt="Logo">
+                <p style="font-size: 19px; margin-top: 25px;">At <span>Adorn Media</span>, our story begins with a touch of inspiration, a spark of innovation, and an unyielding commitment to excellence.</p>
+                <div class="footer-social-icons" style="margin-top: 25px; display: flex;">
+                    <a href="#" class="social-icon2"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="social-icon2"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon2"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon2"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section link-section">
+                <h4>Our Services</h4>
+                <ul>
+                    <!-- <li><a href="#">B2B Email Marketing</a></li> -->
+                    <li><a href="#">Demand Generation</a></li>
+                    <li><a href="#">Lead Generation</a></li>
+                    <li><a href="#">B2B Data Services</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-section">
+                <h4>Quick Link</h4>
+                <ul>
+                    <li><a href="#">Privacy-Policy</a></li>
+                    <li><a href="#">GDPR</a></li>
+                    <li><a href="#">CCPA</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section subscribe-section">
+                <h4>Don’t be a stranger</h4>
+                <ul>
+                    <li><a href="#">sales@adorn-media.com</a></li>
+                    <li><a href="#">India - HO - ADORN HOUSE,CHS Harmony,Ganga Dham,Pune,411 037</a></li>
+                    <!-- <li><a href="#">BO -LMS Finswell 910 ,Viman Nagar, Pune, Maharashtra 411014</a></li> -->
+                    <li><a href="#">United States - 2212 NW 91st Street Miami, Florida 33147</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ <script>
+     document.addEventListener("DOMContentLoaded", function() {
+     AOS.init({
+         duration: 800, // Duration of the animation in milliseconds
+         easing: 'ease-in-out', // Easing function for the animation
+         once: true, // Whether animation should happen only once - while scrolling down
+     });
+ });
+ 
+ </script>
+</body>
+</html>
